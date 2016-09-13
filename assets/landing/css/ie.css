@@ -1,0 +1,39 @@
+/* BS3 IE10 bug fix */
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+
+@media \0screen {
+  img {
+    width: auto;      /* Prevent height distortion in IE8. */
+    max-width: none;  /* Prevent iamge disappearance in IE8. */
+    }
+
+  }
+
+
+/* ie-warning */
+.ie-warning {
+  position: absolute;
+  top:0;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  background: #ed6349;
+  color: #fff;
+  }
+  .ie-warning a { color: #ffcc00 !important; }
+
+
+
+/* Replace SVG logo to PNG */
+.logo-white {
+  background: url(../brand/logo-white.png) no-repeat center center;
+  background-size: 700px 137px;
+  min-height: 100px;
+  }
+  @media (max-width: 767px) { .logo-white { background-size: 500px 98px;} }
+  @media (max-width: 567px) { .logo-white { background-size: 280px 55px;} }
